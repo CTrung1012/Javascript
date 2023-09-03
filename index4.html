@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="">Câu lạc bộ : </label>
+    <input id="club" type="text" onchange="handleChangeClub(this)">
+
+    <br>
+    <br>
+    <div id="info"></div>
+
+    <script>
+      const footballer = {
+        name: "Neymar da Silva Santos Júnior",
+        win: 82,
+        height: 1.75,
+        club: "	Paris Saint-Germain	",
+
+        //   Method
+        addWin(winNumb) {
+          this.win += winNumb;
+        },
+        changeClub(nameClub) {
+          this.club = nameClub;
+          1;
+        },
+      };
+
+      const handleChangeClub = (event) => {
+        footballer.changeClub(event.value);
+        inUI();
+      };
+
+      inUI();
+
+      function inUI() {
+        document.getElementById("info").innerHTML =
+          "Tên : " +
+          footballer.name +
+          "<br>" +
+          "Chiều cao : " + 
+          footballer.height + "m" +
+          "<br>" +
+          "Số bàn thắng : " +
+          footballer.win +
+          "<br>" +
+          "Câu lạc bộ : " +
+          footballer.club;
+      }
+    </script>
+  </body>
+</html>

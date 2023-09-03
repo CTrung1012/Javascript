@@ -1,0 +1,16 @@
+.character_01 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.character_02 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
